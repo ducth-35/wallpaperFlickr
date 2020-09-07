@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#444444</color>
+    <color name="colorPrimaryDark">#000</color>
+    <color name="colorAccent">#444444</color>
+    <color name="Campfire_Nau">#000</color>
+    <color name="orange">#FF5722</color>
+    <color name="green">#4CAF50</color>
+    <color name="blue">#FF0000</color>
+</resources>

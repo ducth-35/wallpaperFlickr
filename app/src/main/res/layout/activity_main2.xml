@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:background="#444444"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main.MainActivity2">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="center" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:scaleType="fitXY"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="25dp"
+        android:layout_marginRight="37dp"
+        android:backgroundTint="#ff0000"
+        android:src="@drawable/plus"
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/fab_layout"
+        app:layout_anchor="@+id/viewPager"
+        app:layout_anchorGravity="bottom|center" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
